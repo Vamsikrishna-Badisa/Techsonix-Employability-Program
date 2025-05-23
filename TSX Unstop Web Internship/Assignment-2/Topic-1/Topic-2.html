@@ -1,0 +1,97 @@
+<!DOCTYPE html> <!-- Declares this is an HTML5 document -->
+<html lang="en"> <!-- Root element with language set to English -->
+<head>
+  <meta charset="UTF-8"> <!-- Character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+  <title>HTML5 Layout</title> <!-- Page title shown in browser tab -->
+  <style>
+    /* Ensure full height and set up flex layout for sticky footer */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Reset box sizing */
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Header styling */
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+    }
+
+    /* Navigation bar */
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin-top: 10px;
+      padding-left: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* Main content takes remaining vertical space */
+    main {
+      flex: 1;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    article {
+      margin: 20px 0;
+      padding: 15px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    /* Footer is always at the bottom */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with navigation -->
+  <header>
+    <h1>My Webpage</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <article>
+      <h2>Welcome to My Website</h2>
+      <p>This is the first paragraph of the article.</p>
+      <p>This is another paragraph giving more information.</p>
+    </article>
+  </main>
+
+  <!-- Sticky Footer -->
+  <footer>
+    <p>&copy; 2025 My Webpage. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
